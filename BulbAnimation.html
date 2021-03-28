@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>Bulb On/Off</title>
+        <style> 
+                body{
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                }
+         </style>
+        <script type="text/javascript">
+        function light(show){
+            var pic;
+            if(show==0){
+                pic="BulbOff.PNG";
+            }
+            else{
+                pic="BulbOn.PNG";
+            }
+            document.getElementById('bulb').src= pic;
+
+        }
+        </script>
+    </head>
+    <body align='right' background="PointingBulb.jpg">
+        <h1> Bulb On/Off</h1>
+        <p>Animation Demo</p>
+         <img id="bulb" src="BulbOff.PNG" width="400px" height="380px">
+        <p>  
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+    </body>
+</html>
